@@ -1,0 +1,30 @@
+/* @group modText */
+.modText p {
+	line-height: 1.5em;
+	font-weight: normal;
+	margin-bottom: 1.5em;
+	color: #555;
+}
+
+.modText h2 a {
+	font-size: 43px;
+	text-decoration: none;
+	color: black;
+}
+
+@media (max-height: 600px) {
+    .modText h2 a {
+    	font-size: 25px;
+    }
+    .modText p {
+    	line-height: 1.2em;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .modLayout .sidebar .modText {
+        padding-right: 5px;
+    }
+    
+}

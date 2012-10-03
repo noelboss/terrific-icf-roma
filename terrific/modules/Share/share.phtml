@@ -1,0 +1,10 @@
+<ul>
+ <?php 
+ $shortlink = get_post_meta(get_the_ID(), 'shortlink', true);
+ if (!$shortlink) {
+ 	$shortlink = get_permalink();
+ } ?><li class="shortlink"><input spellcheck="false" class="shortlink-input" type="text" value="<?php echo $shortlink ?>" />
+</ul>
+<div class="social-share" data-post-id="<?php the_ID() ?>" data-url="<?php the_permalink() ?>" data-shorturl="<?php echo $shortlink ?>" data-text="<?php the_title() ?>" data-via="<?php echo $data['via'] ?>">
+
+</div>

@@ -1,0 +1,8 @@
+/* @group modShare */
+.modShare {
+	float: left;
+}
+
+@media (max-width: 800px) {
+
+}

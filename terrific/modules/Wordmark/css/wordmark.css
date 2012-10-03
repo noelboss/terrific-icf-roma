@@ -1,0 +1,32 @@
+/* @group modWordmark */
+.modWordmark { 
+	font-size: 27px; 
+	font-weight: bold; 
+	line-height: 130%; 
+	padding: 30px 0;
+	height: 80px;
+}
+
+.modWordmark .wort {
+	color: #666;
+}
+
+.modWordmark .letztes { 
+	color: #000;
+}
+
+.modWordmark .wordmark {
+	display: block;
+	text-decoration: none;
+}
+
+@media (max-width: 550px) {
+	
+	.modWordmark {
+		font-size: 1.2em;
+		padding: 15px 30px;
+		width: auto;
+		height: auto;
+	}
+	
+}

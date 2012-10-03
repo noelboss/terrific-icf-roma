@@ -1,0 +1,5 @@
+<ul>
+<?php foreach ($data['blogs'] as $blog) { ?>
+ <li><a href="http://<?php echo $blog['domain'] ?><?php echo $blog['path'] ?>"><?php echo $blog['name'] ?></a></li>
+<?php } ?>
+</ul>

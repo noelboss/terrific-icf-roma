@@ -1,0 +1,46 @@
+/* @group modMenu */
+.skinNavigationFooter,
+.skinNavigationFooter .menu {
+	float: left;
+}
+
+.skinNavigationFooter ul li {
+	display: inline-block;
+}
+
+.skinNavigationFooter ul li a {
+	color: #777;
+	margin-right: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+} 
+
+.skinNavigationFooter ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.skinNavigationFooter .menu-item a {
+	line-height: 21px;
+	height: 18px;
+	padding: 0;
+	display: inline-block;
+}
+
+.skinNavigationFooter .menu-item-220 a,
+.skinNavigationFooter .menu-item-221 a,
+.skinNavigationFooter .menu-item-225 a {
+	padding-left: 22px;
+	background: transparent url(/wp-content/themes/terrific/terrific/modules/Navigation/img/twitter.png) 0 0 no-repeat ;
+}
+
+.skinNavigationFooter .menu-item-221 a {
+	background-image: url(/wp-content/themes/terrific/terrific/modules/Navigation/img/facebook.png);
+}
+.skinNavigationFooter .menu-item-225 a{
+	background-image: url(/wp-content/themes/terrific/terrific/modules/Navigation/img/mail.png);
+}
+
+.skinNavigationFooter .menu-item {
+	float: none;
+}

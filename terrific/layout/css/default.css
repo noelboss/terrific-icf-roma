@@ -1,0 +1,273 @@
+/* @group Layout */
+@media all {
+    .modLayout, .mod {
+        margin: 0;
+    }
+    .modLayout {
+		background-color: #fff;
+		background-image: -webkit-gradient(radial, 0% 100%,100,150% -50%,100, from(rgb(255, 255, 255)), to(rgb(249, 249, 249)));
+		background-image: -webkit-radial-gradient(100% 0%, rgb(249, 249, 249), rgb(255, 255, 255));
+		background-image: -moz-radial-gradient(100% 0%, rgb(249, 249, 249), rgb(255, 255, 255));
+		background-image: -ms-radial-gradient(100% 0%, rgb(249, 249, 249), rgb(255, 255, 255));
+		background-image: radial-gradient(100% 0%, rgb(249, 249, 249), rgb(255, 255, 255));
+    }
+    .modLayout .page-container {
+        width: 80%;
+        text-align: left;
+        position: relative;
+        border-right: 1px solid #eee;
+    }
+
+    .modLayout .sidebar {
+        float: right;
+        width: 260px;
+        height: 1px;
+    }
+
+    .modLayout .sidebar .inner {
+        position: fixed;
+        width: 260px;
+    }
+
+    .modLayout .sidebar .modText {
+		padding-right: 40px;
+		font-size: 0.9em;
+    }
+
+    .modLayout .body {
+        padding-bottom: 50px;
+    }
+
+    .modLayout .head {
+        overflow: hidden;
+    }
+    .modLayout .head .left, .modLayout .content {
+        overflow: hidden;
+    }
+    .modLayout .content-inner {
+        padding: 17px 5% 0 0;
+    }
+    .modLayout .head .right {
+        width: 260px;
+        float: right;
+    }
+    .modLayout .head .right .inner {
+        padding: 30px 0px 0px;
+    }
+
+    .modLayout a {
+        color: #C00017;
+		text-decoration: none;
+    }
+
+    .modLayout a:hover {
+        color: #E1001A;
+    }                  
+
+	img {
+		-ms-interpolation-mode: bicubic;
+	}
+	
+	.modLayout .fat-footer { 
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background: transparent url(../../terrific/img/white_fade.png) 0 0 repeat-x;
+		width: 80%;
+		padding-top: 20px;
+	}  
+	
+	.modLayout .fat-footer .inner{
+		overflow: hidden; 
+		padding: 30px 10px 10px 100px;
+		background: #fff; 
+	}
+
+    .modLayout .fat-footer a:hover {
+        text-decoration: underline;
+    }
+    .modLayout .separator div {
+        border-bottom: 1px dotted #fff;
+        height: 0px;
+        margin: 0 40px;
+    }
+    .modLayout .separator-line {
+        border-bottom: 1px dotted #fff;
+        background-repeat: repeat-x;
+        height: 1px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .body {
+        border-right: 0;
+    }
+    .modLayout .page-container,
+	.modLayout .fat-footer {
+        width: 100%;
+		border-right: 0;
+    }
+	.modLayout .fat-footer .inner{
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+	
+	.modLayout .modContent .entry-title {
+	    font-size: 35px;
+	}
+	
+	.modLayout .modContent time span {
+		display: none;
+	}
+	
+	.modLayout .modComments .comments {
+		padding-left: 20px;
+	}
+	
+	
+	.modLayout .modContent article{
+		margin-left: 20px;
+	}
+}
+@media (max-width: 800px) {
+	body { font-size: 0.8em; }
+	
+    .modLayout .head .left {
+        width: auto;
+        float: none;
+    }
+    .modLayout .head .right {
+        display: none;
+    }
+
+    .modLayout .body {
+        padding-bottom: 70px;
+    }
+
+    .modLayout .page-container {
+        width: auto;
+    }
+	.modLayout .content-inner {
+		padding: 0;
+	}
+    .modLayout .content {
+        float: none;
+        width: auto;
+    }
+
+    .modLayout .content img {
+        width: 100%;
+        height: auto;
+    }
+    .modLayout .content img.wp-smiley {
+        width: auto;
+        height: auto;
+    }
+
+    .modLayout .sidebar {
+        float: none;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+    }
+	.modLayout .sidebar .inner {
+		position: static;
+		width: 100%;
+	}
+
+	.modLayout .sidebar .mod {
+		margin-bottom: 0;
+	}
+	
+	.modLayout .sidebar .modSearch{
+		float: right;
+		margin-right: -5px;
+	}
+	
+	.modLayout .sidebar .modLogo {
+		font-size: 25px;
+		float: right;
+		margin-top: 0;
+	}
+	.modLayout .sidebar .modLogo {
+		margin-top: 20px;
+		width: 140px;
+		font-size: 20px;
+		height: 80px;
+	}
+	.modLayout .sidebar .modLogo img {
+		width: 100px;
+	}
+	.modLayout .sidebar .modLogo strong {
+		display: none;
+	}
+	.modLayout .sidebar .modText {
+		overflow: hidden;
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	
+	.modLayout .sidebar .modText h2 a {
+		font-size: 40px;
+	}	
+	
+    .modLayout .content iframe {
+        width: 100%;
+        height: auto;
+    }   
+
+	.modLayout .fat-footer {
+		border-top: 1px solid #ddd;
+		font-size: 0.8em;
+		position: static;
+	}
+	
+	.modLayout .fat-footer .inner {
+		padding-left: 10px;
+		padding-bottom: 5px;
+		padding-top: 0;
+	}
+	
+	.modLayout .modContent time {
+		font-size: 9px;
+	}
+	
+	.modLayout .skinNavigationFooter .menu-item a, 
+	.modLayout .skinNavigationFooter .menu-item a {
+		padding: 0; background: none;
+		line-height: 1;
+		margin-right: 10px;
+		height: auto;
+	}
+	
+    .modLayout  .modContent .entry-title {
+        font-size: 25px;
+    }
+    .modLayout .modContent article {
+        font-size: 10px;
+        margin: 0 10px 20px 10px;
+        border-top: 1px solid #fff;
+    }
+	.modLayout .modSearch .field { 
+		margin: 10px 0 0;
+		padding: 5px 0 4px 5px;
+		width: 150px;
+		font-size: 15px;  
+		border: 1px solid #eee; 
+	}
+	
+	.modLayout .modFooter {  
+		right: 20px;
+		bottom: 5px;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.modLayout .fat-footer .modFooter {
+		display: none;
+	}
+	
+}
+
+/* @end */

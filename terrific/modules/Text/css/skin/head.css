@@ -1,0 +1,13 @@
+.skinTextHead {
+    margin-bottom: 100px !important;
+}
+@media (max-width: 1000px) {
+    .skinTextHead {
+		margin: 0 10px 30px 100px !important;
+    }
+}                         
+@media (max-width: 600px) {
+    .skinTextHead {
+	    margin-left: 20px !important;
+    }
+}

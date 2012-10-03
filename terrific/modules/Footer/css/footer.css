@@ -1,0 +1,19 @@
+/* @group modFooter */
+.modFooter {   
+	font-size: 0.75em;
+	position: absolute;
+	right: 20px;
+	bottom: 12px;
+	color: #aaa;
+	font-weight: normal;
+}
+
+.modFooter a {
+	color: #777;
+	text-decoration: none;
+}
+
+.modFooter a:hover {
+	color: #333;
+	text-decoration: underline;
+}

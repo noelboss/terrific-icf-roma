@@ -1,0 +1,31 @@
+/* @group modMenu */
+.skinRecentCommentsFooter {
+	padding: 0 20px 40px 20px;
+}
+
+.skinRecentCommentsFooter h3.base {
+	color: #626266;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: none;
+	letter-spacing: 0;
+	line-height: 1;
+}
+
+.skinRecentCommentsFooter ul li {
+	line-height: 20px;
+}
+
+.skinRecentCommentsFooter ul li a {
+	color: #626266;
+	text-decoration: none;
+}
+
+.skinRecentCommentsFooter .menu-item a {
+	padding: 0;
+}
+
+.skinRecentCommentsFooter .menu-item {
+	float: none;
+}

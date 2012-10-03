@@ -1,0 +1,72 @@
+.widget_ns_mailchimp {
+    line-height: 2.0em;
+    margin: 1.5em 0;
+}
+
+.widget_ns_mailchimp h3 {
+    font-size: 14px;
+    color: #818186;
+    line-height: 2.8em;
+}
+
+.widget_ns_mailchimp label {
+    background: #eee;
+    color: #555;
+    display: block;
+    width: 47px;
+    padding: 0 8px;
+    border: 1px solid #eee;
+    line-height: 27px;
+    height: 23px;
+    float: left;
+    clear: both;
+}
+
+
+.widget_ns_mailchimp input {
+    padding: 0px 8px;
+    background: #fff;
+    border: 1px solid #DDD;
+    display: block;
+    width: 120px;
+    display: block;
+    line-height: 27px;
+    height: 23px;
+    float: left;
+}
+
+
+
+.widget_ns_mailchimp .button {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+    width: auto; 
+    height: auto;
+    float: none;
+}
+
+.widget_ns_mailchimp .button:hover {
+    text-decoration: underline;
+}
+
+@media (max-height: 600px){
+
+    .widget_ns_mailchimp {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin: 1em 0;
+    }
+
+    .widget_ns_mailchimp label,
+    .widget_ns_mailchimp input {
+        line-height: 22px;
+        height: 18px;
+    }
+
+}
+

@@ -1,0 +1,29 @@
+/* @group modLogo */
+.modLogo {
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+	height: 120px;
+}
+
+.modLogo img {
+	width: 80px;
+	position: absolute;
+	right: 20px;
+}
+
+.modLogo a {
+	color: #383838;
+	text-decoration: none;
+}
+
+.modLogo a:hover {
+	color: #545454;
+}
+
+
+@media (max-height: 600px) {
+    .modLogo {
+        height: 70px;
+    }
+}

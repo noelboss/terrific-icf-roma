@@ -1,0 +1,9 @@
+<a href="<?php echo $data['link'] ?>" class="typobox" style="background-color: <?php echo $data['background'] ?>; color: <?php echo $data['foreground'] ?>">
+	<?php foreach ($data['lines'] as $line) { ?>
+	<p class="typobox-line" style="font-size: <?php echo $line['size'] ?>px"><?php echo $line['text'] ?></p>
+	<?php } ?>
+	<p class="info">
+		<span><?php echo $data['footer'] ?></span> 
+		<span class="namics">Namics.</span>
+	</p>
+</a>

@@ -1,0 +1,25 @@
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<h1 class="entry-title">
+			<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'terrific' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+				<?php the_title(); ?>
+				<?php terrific_posted_on(); ?>
+			</a>
+		</h1>
+	</header>
+	<?php if ( has_post_thumbnail() ) : ?>
+	<div class="entry-featured-image">
+	<?php the_post_thumbnail('medium') ?>
+	</div>
+	<?php endif; ?>
+	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<div class="entry-summary">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-summary -->
+	<?php else : ?>
+	<div class="entry-content">
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'terrific' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'terrific' ) . '</span>', 'after' => '</div>' ) ); ?>
+	</div><!-- .entry-content -->
+	<?php endif; ?>
+</article><!-- #post-<?php the_ID(); ?> -->

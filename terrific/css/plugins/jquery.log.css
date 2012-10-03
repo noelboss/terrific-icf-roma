@@ -1,0 +1,93 @@
+/*
+  Blackbird - Open Source JavaScript Logging Utility
+  Author: G Scott Olson
+  Web: http://blackbirdjs.googlecode.com/
+       http://www.gscottolson.com/blackbirdjs/
+  Version: 1.0
+
+  The MIT License - Copyright (c) 2008 Blackbird Project
+
+
+  @description modification
+  Some lil style modification for better integration in terrific - by namics
+
+  -> copy from http://lab2.namics.com/frontend/tools/js/debug/jquery.log/jquery.log.css
+  -> changed image pathes
+
+*/
+#blackbird { margin:0; padding:0; position:fixed; _position:absolute; z-index:1000; font:11px/1.3 Consolas, 'Lucida Console', Monaco, monospace; _border:2px solid #BBB;  }
+#blackbird.bbTopLeft { top:0; left:0; _top:expression(eval(document.documentElement.scrollTop+8)); _left:expression(eval(document.documentElement.scrollLeft+8)); }
+#blackbird.bbTopRight { top:0; right:0; }
+* html .bbTopRight { right:auto; top:expression(eval(document.documentElement.scrollTop+8)); left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-document.getElementById('blackbird').offsetWidth-8)); }
+#blackbird.bbBottomLeft  { bottom:0; left:0; }
+* html .bbBottomLeft { bottom:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-document.getElementById('blackbird').offsetHeight-8)); left:expression(eval(document.documentElement.scrollLeft+8)); }
+#blackbird.bbBottomRight { bottom:0; right:0; }
+* html .bbBottomRight { bottom:auto; right:auto; top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-document.getElementById('blackbird').offsetHeight-8)); left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-document.getElementById('blackbird').offsetWidth-8)); }
+
+#blackbird.bbSmall { width:300px; _width:272px; }
+  #blackbird.bbSmall .bbheader { _width:272px; }
+  #blackbird.bbSmall .bbheader div.bbleft, #blackbird.bbSmall .bbfooter div.bbleft   { width:150px; }
+  #blackbird.bbSmall .bbmain { _width:272px; }
+  #blackbird.bbSmall .bbmain div { height:200px; }
+  #blackbird.bbSmall .bbmain div.bbmainBody { width:272px; }
+  #blackbird.bbSmall .bbfooter { _width:272px; }
+
+#blackbird.bbLarge { width:500px; _width:472px; }
+  #blackbird.bbLarge .bbheader { _width:472px; }
+  #blackbird.bbLarge .bbheader div.bbleft, #blackbird.bbLarge .bbfooter div.bbleft { width:350px; }
+  #blackbird.bbLarge .bbmain { _width:472px; }
+  #blackbird.bbLarge .bbmain div { height:500px; }
+  #blackbird.bbLarge .bbmain div.bbmainBody { width:472px; }
+  #blackbird.bbLarge .bbfooter { _width:472px; }
+
+#blackbird .bbheader span { position:relative; width:16px; height:16px; margin:0 4px; padding:0; float:left; background-image:url(../../img/plugins/jquery.log.icons.png); background-repeat:no-repeat; cursor:pointer; clear: none; }
+	#blackbird .bbheader span.error           { background-position:0px 0px; }
+	#blackbird .bbheader span.errorDisabled   { background-position:-16px 0px; }
+	#blackbird .bbheader span.warn            { background-position:0px -16px; }
+	#blackbird .bbheader span.warnDisabled    { background-position:-16px -16px; }
+	#blackbird .bbheader span.info            { background-position:0px -32px; }
+	#blackbird .bbheader span.infoDisabled    { background-position:-16px -32px; }
+	#blackbird .bbheader span.debug           { background-position:0px -48px; }
+	#blackbird .bbheader span.debugDisabled   { background-position:-16px -48px; }
+	#blackbird .bbheader span.time            { background-position:0px -64px; }
+	#blackbird .bbheader span.timeDisabled { background-position:-16px -64px; }
+	#blackbird .bbheader span.close           { background-position:0px -80px; }
+	#blackbird .bbheader span.clear           { background-position:-16px -80px; }
+	#blackbird .bbheader span.small           { background-position:0px -96px; }
+	#blackbird .bbheader span.large           { background-position:-16px -96px; }
+
+#blackbird .bbheader > div, #blackbird .bbmain > div, #blackbird .bbfooter > div { background-image:url(../../img/plugins/jquery.log.panel.png); background-repeat:no-repeat; }
+
+#blackbird .bbheader div { float:left; _background-color:#000; }
+	#blackbird .bbheader div.bbleft { background-position:top left; height:40px; _height:16px; }
+		#blackbird .bbheader .bbleft div.filters { margin-left: -4px; padding:16px 0 0 19px; float:left; _padding:6px 8px; }
+	#blackbird .bbheader div.bbright { background-position:top right; height:40px; width:150px; _width:122px; _height:16px; }
+		#blackbird .bbheader .bbright div.controls { padding:16px 24px 0 0; float:right; _padding:6px 8px; }
+		#blackbird .bbheader .bbright .controls span { margin:0; }
+		#blackbird .bbheader .bbright .controls span.clear { margin-right:8px; }
+
+#blackbird .bbmain { }
+#blackbird .bbmain div { float: left; }
+	#blackbird .bbmain div.bbleft { background-position:0 -30px; width:11px; _width:0; }
+	#blackbird .bbmain div.bbmainBody { background-position:40% -40px; _background-color:#000; _filter:alpha(opacity='93'); }
+		#blackbird .bbmain .bbmainBody ol { line-height: 1.45; height:100%; overflow:auto; width:100%; list-style-type:none; margin:0; padding:0; }
+		#blackbird .bbmain .bbmainBody ol li { padding:1px 4px 1px 30px; border-bottom: 1px solid #333; color:#CCC; margin: 2px 2px; _text-indent: -2px; }
+		  #blackbird .bbmain .bbmainBody ol li span { background:url(../../img/plugins/jquery.log.icons.png) no-repeat 0 0; border: none; height:16px; width:16px; display:block; float:left; margin: -1px 0 1px -25px; padding:0; _display:inline; }
+
+#blackbird .bbmain .bbmainBody ol li.error span   { background-position:0 0; }
+#blackbird .bbmain .bbmainBody ol li.warn span    { background-position:0 -16px; }
+#blackbird .bbmain .bbmainBody ol li.info span    { background-position:0 -32px; }
+#blackbird .bbmain .bbmainBody ol li.debug span   { background-position:0 -48px; }
+#blackbird .bbmain .bbmainBody ol li.time span { background-position:0 -64px; }
+
+#blackbird .bbmain .bbmainBody ol li.time { color:#DDD; font-style:italic; }
+
+#blackbird .errorHidden li.error, #blackbird .warnHidden li.warn, #blackbird .infoHidden li.info, #blackbird .debugHidden li.debug,	#blackbird .timeHidden li.time { display:none; }
+
+#blackbird .bbmain div.bbright { background:url(../../img/plugins/jquery.log.panel.png) no-repeat 100% -30px; width:17px; _width:0; }
+
+#blackbird .bbfooter div { height:50px; float:left; _background-color:#000; _height:30px; }
+#blackbird .bbfooter div.bbleft { background-position:bottom left; _width:100%  !important; }
+  #blackbird .bbfooter div.bbleft label { display:block;color:#BBB;margin:8px 0 0 16px; position:relative; font-family:Arial,sans-serif; _margin:4px 0 0 8px; }
+    #blackbird .bbfooter div.bbleft label input { padding:0;vertical-align:middle;display: inline;margin-right: 5px; }
+#blackbird .bbfooter div.bbright { background-position:bottom right; width:150px; _width:0; }

@@ -1,0 +1,27 @@
+/* @group modSearch */
+.modSearch .assistive-text {
+	display: none;
+}
+
+.modSearch .field {
+	padding: 10px 0 8px 10px;
+	width: 250px;
+	font-size: 20px;
+	border: none;
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.modSearch .submit {
+	display: none;
+}       
+
+
+.modSearch .field {
+	padding: 10px 0 8px 10px;
+	width: 250px;
+	font-size: 20px;
+	border: none;
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
